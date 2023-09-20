@@ -1,0 +1,238 @@
+* {
+font-size: small;
+}
+header {
+    
+    padding: 45px;
+    text-align: left;
+    display: inline-block;
+}
+header * {
+    font-size: 12px;
+}
+
+
+.zahlavi {
+    z-index: 100;
+    position:fixed;
+    padding: 20px;
+    left: 0%;
+    top:0%;
+    width: 100%;
+    
+    display: flex;
+    align-items: center; /* Vyrovná položky na střed vertikálně */
+  
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+.zahlavi > div {
+    display: flex;
+    align-items: center; /* Vyrovná položky na střed vertikálně */
+  
+  flex-direction: row;
+  padding-right: 50px;
+}
+.logo {
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.jmeno h1 {
+    
+
+    font-family: 'Safira March Personal Use', sans-serif;
+                                                                                                
+}
+.menu {
+    display: flex;
+    justify-self: center;
+}
+.menu ul {
+    list-style-type: none; /* Odebere výchozí odrážky */
+    padding: 0; /* Odebere výchozí vnitřní odsazení */
+    font-family: 'Safira March Personal Use', sans-serif;
+}
+
+.menu ul li {
+    display: inline; /* Položky menu vedle sebe */
+    margin-right: 40px; /* Mezery mezi položkami menu */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'l rn'
+      'l rd';
+    gap: 10px;
+ 
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+ 
+  }
+
+.leva { grid-area: l; }
+.pravanahore { grid-area: rn;
+display: flex;
+align-items: flex-end;
+justify-content: flex-start;
+}
+.pravanahore *{
+    font-size: 20px;
+}
+.pravadole { grid-area: rd;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.Doubi {
+    width: 75%;
+ 
+}
+
+.Ikony img {
+    margin-right: 20px; /* Mezery mezi ikonami */
+    
+}
+
+h2 {
+    font-family: 'Made Canvas';
+   
+    font-weight: lighter;
+    color:black;
+   
+}
+
+.Svetr {
+    margin-left: 100px;
+    float:left;
+}
+
+.Popis {
+    
+    line-height: 1.7;
+    width: 750px;
+    text-align: justify;
+}
+
+.Fotogalerie {
+    float: left;
+    position: relative;
+    height: auto;
+    width: 90%;
+}
+
+.Fotky {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+}
+
+
+
+.Text-fotky {
+    margin-left: 100px;
+}
+
+.Kontakt {
+    float: left;
+}
+
+body {
+    font-family: 'Raleway';
+    background-color: #ffffff;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+.Insta {
+    display: inline;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.Facebook {
+    display: inline;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.Mail {
+    display: inline;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.LinkedIn {
+    display:inline;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+
+.Zivili {
+    width: 724px;
+    height: 1086px;
+}
+
+.hike {
+    width: 724px;
+    height: 1086px;
+}
+
+.Svatba {
+    width: 700px;
+    height: 991px;
+}
+
+.Knihy {
+    width: 724px;
+    height: 1086px;
+}
+
+.Jidlo {
+    width: 724px;
+    height: 1086px;
+}
+
+footer {
+    background-color: #ffffff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
