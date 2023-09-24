@@ -1,6 +1,34 @@
-* {
-font-size: small;
+@media only screen and (max-width: 1200px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          "l"
+          'rn'
+          'rd';
+        gap: 10px;
+        padding: 35px;
+      }
+    }
+
+@media screen and (max-width:320px) {
+    .grid-container{
+        display: grid;
+        padding-right: 35px;
+    }
+    .leva {
+        position:relative;
+        top: 85px;
+    }
+    .body {
+        max-width: 300px;
+    }
 }
+
+.odkaz, .Insta, .Facebook, .LinkedIn, .Mail {
+    text-decoration: none;
+    color:black;
+}
+
 header {
     
     padding: 45px;
@@ -8,9 +36,8 @@ header {
     display: inline-block;
 }
 header * {
-    font-size: 12px;
+    font-size: 18px;
 }
-
 
 .zahlavi {
     z-index: 100;
@@ -21,18 +48,19 @@ header * {
     width: 100%;
     
     display: flex;
-    align-items: center; /* Vyrovná položky na střed vertikálně */
+    align-items: center;
   
     justify-content: space-between;
     background-color: #ffffff;
 }
 .zahlavi > div {
     display: flex;
-    align-items: center; /* Vyrovná položky na střed vertikálně */
+    align-items: center;
   
   flex-direction: row;
   padding-right: 50px;
 }
+
 .logo {
     margin-right: 20px;
     margin-left: 20px;
@@ -41,56 +69,86 @@ header * {
 }
 
 .jmeno h1 {
-    
-
-    font-family: 'Safira March Personal Use', sans-serif;
-                                                                                                
+    font-family: 'Safira March Personal Use', sans-serif;                                                                               
 }
+
 .menu {
     display: flex;
     justify-self: center;
 }
+
 .menu ul {
-    list-style-type: none; /* Odebere výchozí odrážky */
-    padding: 0; /* Odebere výchozí vnitřní odsazení */
+    list-style-type: none; 
+    padding: 0; 
     font-family: 'Safira March Personal Use', sans-serif;
 }
 
 .menu ul li {
-    display: inline; /* Položky menu vedle sebe */
-    margin-right: 40px; /* Mezery mezi položkami menu */
+    display: inline;
+    margin-right: 40px;
 }
 
 .grid-container {
     display: grid;
     grid-template-areas:
+
       'l rn'
       'l rd';
     gap: 10px;
- 
-    padding: 10px;
+    padding: 5px;
+    padding-right: 65px;
   }
-  
-  .grid-container > div {
+
+
+.grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
- 
   }
 
-.leva { grid-area: l; }
+.leva { 
+    grid-area: l;
+    max-width:100%;
+    height:auto;
+}
 .pravanahore { grid-area: rn;
-display: flex;
-align-items: flex-end;
-justify-content: flex-start;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 .pravanahore *{
-    font-size: 20px;
+    font-size: 30px;
 }
 .pravadole { grid-area: rd;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+}
+
+.p, .table {
+    font-size: 18px;
+}
+
+.prazdny {
+    line-height: 2;
+    font-size:x-large;
+}
+
+.rok {
+    padding-right: 35px;
+    font-weight:600;
+}
+
+.zivotopis {
+    padding-left: 10px;
+}
+
+.text-kontakt {
+    margin-left: 50px;
+}
+
+.nadpis {
+    padding-left: 5px;
 }
 
 .Doubi {
@@ -131,20 +189,29 @@ h2 {
 }
 
 .Fotky {
-    position: relative;
+    position:relative;
     height: 100%;
     width: 100%;
     overflow:hidden;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 45px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
-
-
 
 .Text-fotky {
-    margin-left: 100px;
+    margin-left: 50px;
+    padding-bottom: 30px;
 }
+
 
 .Kontakt {
     float: left;
+    margin-left: 5px;
 }
 
 body {
@@ -186,30 +253,22 @@ ul li {
     height: 40px;
 }
 
+.Svatba {
+    height: 491px;
+}
 
-.Zivili {
-    width: 724px;
-    height: 1086px;
+.Knihy, .Jidlo, .Relax, .Foceni, .Zamek, .Tulka, .Zmrzlina, .Josefak, .Horska, .Zivili {
+    width: 330px;
+    height: 491px;
 }
 
 .hike {
-    width: 724px;
-    height: 1086px;
+    height: 491px;
 }
 
-.Svatba {
-    width: 700px;
-    height: 991px;
-}
-
-.Knihy {
-    width: 724px;
-    height: 1086px;
-}
-
-.Jidlo {
-    width: 724px;
-    height: 1086px;
+.socky {
+    padding-left: 35px;
+    font-weight:900;
 }
 
 footer {
@@ -218,21 +277,4 @@ footer {
     text-align: center;
     padding: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
